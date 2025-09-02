@@ -1,5 +1,8 @@
 # airflow_env-using-Postgres
 
+Using PostgreSQL as the metadata database for Apache Airflow in a production environment is a recommended best practice due to its robustness, scalability, and data integrity features, 
+which are crucial for a stable and reliable data orchestration platform.
+
 ## 1. **Installing PostgreSQL “in WSL system” (via apt)**
 
 * You’re installing **system-wide PostgreSQL** using Ubuntu’s package manager (`apt`).
