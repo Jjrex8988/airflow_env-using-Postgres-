@@ -1,4 +1,4 @@
-# airflow_env-using-Postgres-
+# airflow_env-using-Postgres
 
 ## 1. **Installing PostgreSQL “in WSL system” (via apt)**
 
