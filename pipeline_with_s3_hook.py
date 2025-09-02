@@ -6,7 +6,8 @@ from airflow import DAG
 from airflow.utils.dates import days_ago
 from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
-from airflow.hooks.s3_hook import S3Hook
+# from airflow.hooks.s3_hook import S3Hook
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from io import StringIO
 
 default_args = {
@@ -110,3 +111,4 @@ with DAG(dag_id='pipeline_with_s3_hook',
     read_s3_file_task >> remove_null_values_task >> \
     create_table_customer_credit_card_details_task >> \
     insert_data_customer_credit_card_details_task
+
